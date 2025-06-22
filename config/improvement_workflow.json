@@ -1,0 +1,64 @@
+{
+  "workflow_steps": [
+    {
+      "step": "discovery",
+      "description": "Scan target directories for Python files",
+      "timeout": 30,
+      "required": true
+    },
+    {
+      "step": "analysis",
+      "description": "AI analysis of code quality and improvement opportunities",
+      "timeout": 120,
+      "required": true
+    },
+    {
+      "step": "prioritization",
+      "description": "Rank improvements by impact and safety",
+      "timeout": 15,
+      "required": true
+    },
+    {
+      "step": "generation",
+      "description": "Generate improved code using AI",
+      "timeout": 180,
+      "required": true
+    },
+    {
+      "step": "validation",
+      "description": "Validate syntax, imports, and safety",
+      "timeout": 60,
+      "required": true
+    },
+    {
+      "step": "backup",
+      "description": "Create backup of original file",
+      "timeout": 10,
+      "required": true
+    },
+    {
+      "step": "application",
+      "description": "Apply improvements to codebase",
+      "timeout": 30,
+      "required": true
+    },
+    {
+      "step": "verification",
+      "description": "Test that changes don't break system",
+      "timeout": 120,
+      "required": true
+    },
+    {
+      "step": "documentation",
+      "description": "Record improvements in Zettelkasten",
+      "timeout": 45,
+      "required": false
+    }
+  ],
+  "failure_handling": {
+    "rollback_on_validation_failure": true,
+    "rollback_on_verification_failure": true,
+    "continue_on_documentation_failure": true,
+    "max_retries_per_step": 2
+  }
+} 

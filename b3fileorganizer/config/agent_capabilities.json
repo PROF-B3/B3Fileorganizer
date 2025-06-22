@@ -1,0 +1,64 @@
+{
+  "B3FileOrganizer": {
+    "name": "B3FileOrganizer",
+    "description": "AI-powered file organization and knowledge management system",
+    "version": "1.0.0",
+    "capabilities": {
+      "file_organization": {
+        "enabled": true,
+        "features": [
+          "intelligent_file_categorization",
+          "zettelkasten_numbering",
+          "folder_structure_creation",
+          "file_renaming_and_moving",
+          "duplicate_detection",
+          "content_analysis"
+        ]
+      },
+      "ai_integration": {
+        "enabled": true,
+        "models": [
+          "mixtral:latest",
+          "llama3.2:3b", 
+          "codellama:latest"
+        ],
+        "features": [
+          "structured_output_parsing",
+          "content_classification",
+          "semantic_analysis",
+          "learning_from_user_feedback"
+        ]
+      },
+      "monitoring": {
+        "enabled": true,
+        "features": [
+          "file_system_monitoring",
+          "resource_usage_tracking",
+          "progress_reporting",
+          "error_handling"
+        ]
+      },
+      "data_management": {
+        "enabled": true,
+        "features": [
+          "sqlite_database",
+          "organization_history",
+          "learning_patterns",
+          "configuration_storage"
+        ]
+      }
+    },
+    "workflow_triggers": [
+      "file_system_changes",
+      "manual_execution",
+      "scheduled_runs",
+      "api_calls"
+    ],
+    "output_formats": [
+      "structured_json",
+      "progress_reports",
+      "organization_summaries",
+      "error_logs"
+    ]
+  }
+} 

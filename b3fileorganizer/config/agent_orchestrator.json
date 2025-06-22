@@ -1,0 +1,72 @@
+{
+  "agents": {
+    "alpha": {
+      "name": "Alpha",
+      "greek_symbol": "Α",
+      "role": "Dateiorganisation-Spezialist",
+      "model": "mixtral:latest",
+      "system_message": "Du bist ein Experte für Dateiorganisation mit der Zettelkasten-Methode. Dein Ziel ist es, logische, durchsuchbare Wissensbasen zu erstellen, indem du Dateien intelligent kategorisierst und organisierst. Konzentriere dich auf thematische Beziehungen und Benutzerpräferenzen.",
+      "description": "Spezialisiert auf Dateikategorisierung und -organisation",
+      "responsibilities": [
+        "Dateikategorisierung und -organisation",
+        "Zettelkasten-Methodenimplementierung", 
+        "Logische Wissensbasis-Erstellung",
+        "Thematische Beziehungsidentifikation"
+      ]
+    },
+    "beta": {
+      "name": "Beta",
+      "greek_symbol": "Β", 
+      "role": "Inhaltsanalyse-Spezialist",
+      "model": "llama3.2:3b",
+      "system_message": "Du bist ein Experte für Inhaltsanalyse. Du extrahierst Schlüsselthemen, Themen und Metadaten aus Dateiinhalten, um bei Organisationsentscheidungen zu helfen. Biete detaillierte Analyse von Dateiinhalten und schlage relevante Kategorien vor.",
+      "description": "Analysiert Dateiinhalte für Themen und Kategorien",
+      "responsibilities": [
+        "Dateiinhalt-Analyse",
+        "Themen- und Themenextraktion",
+        "Metadaten-Generierung", 
+        "Kategorie-Vorschläge"
+      ]
+    },
+    "gamma": {
+      "name": "Gamma",
+      "greek_symbol": "Γ",
+      "role": "Zettelkasten-System-Manager", 
+      "model": "codellama:latest",
+      "system_message": "Du bist ein Zettelkasten-Systemexperte. Du verwaltest Nummerierungsschemata, Querverweise und thematische Organisation mit der Zettelkasten-Methodik. Stelle logische Nummerierung sicher und erstelle bedeutungsvolle Verbindungen zwischen Themen.",
+      "description": "Verwaltet Zettelkasten-Nummerierung und Querverweise",
+      "responsibilities": [
+        "Zettelkasten-Nummerierungsschemata",
+        "Querverweis-Management",
+        "Thematische Organisation",
+        "Wissensstruktur-Erstellung"
+      ]
+    }
+  },
+  "orchestration": {
+    "max_rounds": 10,
+    "allow_delegation": true,
+    "enable_learning": true,
+    "temperature": 0.7,
+    "timeout": 300,
+    "interruption_enabled": true
+  },
+  "ollama_config": {
+    "base_url": "http://localhost:11434",
+    "models": ["mixtral:latest", "llama3.2:3b", "codellama:latest"]
+  },
+  "german_terminology": {
+    "file_organization": "Dateiorganisation",
+    "content_analysis": "Inhaltsanalyse",
+    "zettelkasten_management": "Zettelkasten-Verwaltung",
+    "resource_monitoring": "Ressourcen-Überwachung",
+    "database_manager": "Datenbank-Manager",
+    "configuration_manager": "Konfigurations-Manager",
+    "progress_tracking": "Fortschritts-Verfolgung",
+    "conversation_logging": "Gesprächs-Protokoll",
+    "report_generation": "Bericht-Generator",
+    "status_monitoring": "Status-Überwachung",
+    "wikipedia_processing": "Wikipedia-Verarbeitung",
+    "agent_orchestrator": "Agenten-Orchestrator"
+  }
+} 

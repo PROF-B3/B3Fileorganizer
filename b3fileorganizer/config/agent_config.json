@@ -1,0 +1,98 @@
+{
+  "placeholder": "Please paste your agent configuration JSON here",
+  "B3FileOrganizer": {
+    "workflow_config": {
+      "name": "AI-Powered File Organization System",
+      "version": "1.0.0",
+      "description": "Intelligent file organization using AI with Zettelkasten methodology",
+      "nodes": [
+        {
+          "id": "file_monitor",
+          "name": "File System Monitor",
+          "type": "trigger",
+          "parameters": {
+            "watch_paths": ["B:/", "X:/"],
+            "file_types": ["*"],
+            "recursive": true
+          }
+        },
+        {
+          "id": "file_analyzer",
+          "name": "File and Folder Analyzer",
+          "type": "processor",
+          "parameters": {
+            "command": "dir /B",
+            "separate_files_folders": true,
+            "exclude_patterns": ["*.tmp", "*.log", "Thumbs.db"]
+          }
+        },
+        {
+          "id": "ai_classifier",
+          "name": "AI File Classifier",
+          "type": "ai_processor",
+          "parameters": {
+            "model": "mixtral:latest",
+            "prompt_template": "Analyze the following files and suggest organization:\n\nFiles: {files}\nFolders: {folders}\n\nGroup files into logical categories and suggest folder names. Consider:\n- File content and purpose\n- Zettelkasten numbering system\n- Thematic relationships\n- User preferences from history\n\nOutput structured JSON with categories and suggested moves.",
+            "output_schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "folder": {"type": "string"},
+                  "files": {"type": "array", "items": {"type": "string"}},
+                  "zettel_number": {"type": "string"},
+                  "confidence": {"type": "number"}
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "file_mover",
+          "name": "File Movement Executor",
+          "type": "action",
+          "parameters": {
+            "create_folders": true,
+            "backup_before_move": true,
+            "conflict_resolution": "rename"
+          }
+        }
+      ]
+    },
+    "ai_prompts": {
+      "file_classification": {
+        "system_message": "You are an expert file organizer using the Zettelkasten method. Your goal is to create a logical, searchable knowledge base.",
+        "user_template": "Here are files to organize:\n{file_list}\n\nCurrent folder structure:\n{folder_structure}\n\nPrevious organization patterns:\n{learning_history}\n\nSuggest organization with Zettelkasten numbering.",
+        "output_format": "structured_json"
+      },
+      "content_analysis": {
+        "system_message": "You are a content analyst. Extract key themes and topics from file content.",
+        "user_template": "Analyze this content:\n{content}\n\nExtract:\n- Main topics\n- Key concepts\n- Suggested tags\n- Zettelkasten category"
+      }
+    },
+    "zettelkasten_config": {
+      "numbering_system": "decimal",
+      "category_prefixes": {
+        "knowledge": "1",
+        "projects": "2", 
+        "references": "3",
+        "personal": "4",
+        "archive": "5"
+      },
+      "auto_numbering": true,
+      "cross_references": true
+    },
+    "monitoring_config": {
+      "resource_limits": {
+        "max_cpu_percent": 80,
+        "max_memory_percent": 75,
+        "max_concurrent_operations": 5
+      },
+      "progress_reporting": {
+        "interval_seconds": 5,
+        "detailed_logging": true,
+        "time_estimates": true
+      }
+    }
+  }
+} 

@@ -1,0 +1,38 @@
+{
+  "file_categorization_rules": {
+    "text": [".txt", ".md", ".py", ".js", ".html", ".css", ".json", ".xml", ".csv"],
+    "image": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".svg"],
+    "video": [".mp4", ".avi", ".mov", ".wmv", ".flv", ".mkv", ".webm"],
+    "audio": [".mp3", ".wav", ".flac", ".aac", ".ogg", ".wma"],
+    "document": [".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx"],
+    "code": [".py", ".js", ".java", ".cpp", ".c", ".php", ".rb", ".go"],
+    "other": []
+  },
+  "zettel_numbering_rules": {
+    "main": {
+      "prefix": "",
+      "increment_field": "last_main_topic",
+      "folder": "1"
+    },
+    "frequent": {
+      "prefix": "A",
+      "increment_field": "last_frequent",
+      "folder": "A"
+    },
+    "quote": {
+      "prefix": "Z",
+      "increment_field": "last_quote",
+      "folder": "Z"
+    },
+    "subtopic": {
+      "parent_field": "main_topics",
+      "letter_sequence": true,
+      "folder": "1"
+    }
+  },
+  "safety": {
+    "max_files_per_cycle": 10,
+    "max_card_size": 10000,
+    "allowed_extensions": [".txt", ".md", ".py", ".js", ".html", ".css", ".json", ".xml", ".csv", ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".svg", ".mp4", ".avi", ".mov", ".wmv", ".flv", ".mkv", ".webm", ".mp3", ".wav", ".flac", ".aac", ".ogg", ".wma", ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".java", ".cpp", ".c", ".php", ".rb", ".go"]
+  }
+} 

@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+b3fileorganizer.log
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+databases/
+b3fileorganizer/databases/
+
+# Backups
+backups/
+*.bak
+*.backup
+
+# Generated content
+X/_metadata/card_index.json
+X/_metadata/numbering_scheme.json
+b3fileorganizer/X/_metadata/card_index.json
+b3fileorganizer/X/_metadata/numbering_scheme.json
+
+# Dynamic modules registry
+b3fileorganizer/core/dynamic_modules.json
+
+# Test files
+test_*.py
+*_test.py
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Configuration overrides (keep templates)
+config/local_*.json
+b3fileorganizer/config/local_*.json
+
+# AI model files (if any)
+models/
+*.gguf
+*.bin
+
+# User-specific files
+user_data/
+personal/ 

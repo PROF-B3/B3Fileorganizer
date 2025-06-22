@@ -1,0 +1,48 @@
+{
+  "pattern_tracking": {
+    "track_successful_improvements": true,
+    "track_failed_attempts": true,
+    "track_performance_impacts": true,
+    "track_user_feedback": true
+  },
+  "pattern_categories": {
+    "code_smells": {
+      "description": "Common code quality issues",
+      "examples": ["long_methods", "duplicate_code", "god_classes"],
+      "learning_weight": 1.0
+    },
+    "performance_patterns": {
+      "description": "Performance optimization opportunities",
+      "examples": ["inefficient_loops", "unnecessary_operations", "memory_leaks"],
+      "learning_weight": 1.5
+    },
+    "bug_patterns": {
+      "description": "Common bug types and fixes",
+      "examples": ["off_by_one", "null_checks", "type_errors"],
+      "learning_weight": 2.0
+    },
+    "improvement_strategies": {
+      "description": "Successful improvement approaches",
+      "examples": ["refactoring_techniques", "optimization_methods", "testing_strategies"],
+      "learning_weight": 1.2
+    }
+  },
+  "zettelkasten_integration": {
+    "create_improvement_cards": true,
+    "link_related_improvements": true,
+    "track_improvement_history": true,
+    "generate_learning_summaries": true,
+    "improvement_card_template": {
+      "title": "Code Improvement: {file_name}",
+      "category": "self_improvement",
+      "tags": ["ai-generated", "code-improvement", "{improvement_type}"],
+      "sections": [
+        "original_analysis",
+        "improvements_made",
+        "impact_assessment",
+        "lessons_learned",
+        "related_patterns"
+      ]
+    }
+  }
+} 

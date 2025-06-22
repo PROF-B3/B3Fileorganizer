@@ -1,0 +1,49 @@
+{
+  "improvement_settings": {
+    "max_files_per_cycle": 2,
+    "cycle_interval_hours": 6,
+    "backup_retention_days": 30,
+    "safety_threshold": 0.8,
+    "target_directories": [
+      "text",
+      "core",
+      "utils"
+    ],
+    "excluded_files": [
+      "__init__.py",
+      "test_*.py",
+      "deploy_*.py"
+    ]
+  },
+  "ai_analysis_config": {
+    "model": "mixtral:latest",
+    "max_code_length": 2000,
+    "analysis_timeout": 60,
+    "focus_areas": [
+      "performance_optimization",
+      "bug_fixes",
+      "error_handling",
+      "code_clarity",
+      "security_improvements"
+    ]
+  },
+  "safety_config": {
+    "require_syntax_validation": true,
+    "require_import_testing": true,
+    "create_backups": true,
+    "rollback_on_failure": true,
+    "max_risk_level": "medium"
+  },
+  "learning_config": {
+    "record_in_zettelkasten": true,
+    "track_patterns": true,
+    "learn_from_failures": true,
+    "improvement_categories": [
+      "performance",
+      "bugs",
+      "clarity",
+      "structure",
+      "security"
+    ]
+  }
+}

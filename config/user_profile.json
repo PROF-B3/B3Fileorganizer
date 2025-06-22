@@ -1,0 +1,52 @@
+{
+  "user_info": {
+    "alias": "",
+    "language": "en"
+  },
+  "onboarding_answers": {
+    "q1_subjects_fascinate": "",
+    "q2_influential_art": "der steppenwolf",
+    "q3_skill_to_master": "being happy",
+    "q4_proud_project": "being a teacher",
+    "q5_recurring_theme": "understanding",
+    "q6_favorite_learning": "seeing a master at work",
+    "q7_breadth_vs_depth": "i like both",
+    "q8_more_time_hobby": "boxing",
+    "q9_inspiring_memory": "the sea",
+    "q10_returning_question": "why do we need states?",
+    "q11_collector_creator_connector": "i am all three",
+    "q12_chaos_vs_order": "i would like to bring order to chaos but see that I need chaos to think",
+    "q13_deadlines_feeling": "they do both at different times",
+    "q14_work_soundscape": "no difference but I do like to have music or people. never had ccomplete silence",
+    "q15_handle_distractions": "badly",
+    "q16_favorite_time_of_day": "from 10pm to 4 am",
+    "q17_plan_or_improvise": "im good at planning but end up improvising a lot since plans rely on others",
+    "q18_celebrate_completion": "i dont",
+    "q19_approach_failure": "i learn from them or try to at least",
+    "q20_guiding_belief": "freedom",
+    "q21_workspace_description": "messy, but hopefully functionally. in the future id like to at least make it more efficient",
+    "q22_workspace_reorg_freq": "seldom",
+    "q23_workspace_change": "order",
+    "q24_work_rituals": "i smoke",
+    "q25_tools_within_reach": "tabacco",
+    "q26_capture_ideas": "often",
+    "q27_digital_vs_analog": "i like analog but see the necessity and need to digitize it while keeping its core principles, see Luhmann",
+    "q28_archive_old_projects": "i dont let go of things they just vanish themselves when the time is right",
+    "q29_mark_done": "good question next question",
+    "q30_handle_digital_clutter": "by inventing something like you",
+    "q31_when_energized": "when i talk to people",
+    "q32_workday_structure": "i dont",
+    "q33_breaks_how": "when i feel thirsty",
+    "q34_recharge_method": "i smoke",
+    "q35_ideal_focus_length": "until the work is finished",
+    "q36_track_progress": "by putting the finished pdf in a folder",
+    "q37_working_alone_or_with_others": "with others",
+    "q38_routine_vs_spontaneity": "i dont",
+    "q39_small_habit_big_diff": "being happy",
+    "q40_perfect_workday": "like getting shit done"
+  },
+  "system_name": "Sophia",
+  "metadata": {
+    "profile_complete": true
+  }
+}

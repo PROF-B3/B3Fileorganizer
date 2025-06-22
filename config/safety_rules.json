@@ -1,0 +1,49 @@
+{
+  "file_safety": {
+    "never_modify": [
+      "__init__.py",
+      "requirements.txt",
+      "setup.py",
+      "config/*.json"
+    ],
+    "require_backup": true,
+    "max_file_size_kb": 100,
+    "require_git_tracking": false
+  },
+  "code_safety": {
+    "syntax_validation": {
+      "required": true,
+      "parser": "ast",
+      "timeout": 10
+    },
+    "import_testing": {
+      "required": true,
+      "timeout": 30,
+      "rollback_on_failure": true
+    },
+    "risk_assessment": {
+      "max_risk_score": 0.7,
+      "risk_factors": [
+        "file_criticality",
+        "change_scope",
+        "complexity_increase",
+        "dependency_impact"
+      ]
+    }
+  },
+  "system_safety": {
+    "max_concurrent_improvements": 1,
+    "cooldown_between_cycles": 300,
+    "emergency_stop_conditions": [
+      "high_error_rate",
+      "system_instability",
+      "resource_exhaustion"
+    ],
+    "rollback_triggers": [
+      "syntax_error",
+      "import_failure",
+      "test_failure",
+      "performance_degradation"
+    ]
+  }
+} 

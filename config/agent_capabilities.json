@@ -1,0 +1,46 @@
+{
+  "epsilon_agent": {
+    "name": "Epsilon",
+    "greek_symbol": "Ε",
+    "role": "Code Analysis and Generation Specialist",
+    "model": "mixtral:latest",
+    "capabilities": [
+      "static_code_analysis",
+      "performance_profiling",
+      "bug_detection",
+      "code_generation",
+      "refactoring_suggestions",
+      "security_analysis"
+    ],
+    "system_message": "You are Epsilon (Ε), an expert code analyst and generator. You specialize in improving code quality, performance, and maintainability. Always provide specific, actionable improvements with minimal risk.",
+    "temperature": 0.3,
+    "max_tokens": 4096
+  },
+  "improvement_types": {
+    "performance": {
+      "priority": "high",
+      "risk_tolerance": "medium",
+      "examples": ["algorithm optimization", "memory efficiency", "caching"]
+    },
+    "bugs": {
+      "priority": "critical",
+      "risk_tolerance": "low",
+      "examples": ["null pointer fixes", "exception handling", "edge cases"]
+    },
+    "clarity": {
+      "priority": "medium",
+      "risk_tolerance": "low",
+      "examples": ["variable naming", "function decomposition", "comments"]
+    },
+    "structure": {
+      "priority": "medium",
+      "risk_tolerance": "medium",
+      "examples": ["class organization", "module structure", "design patterns"]
+    },
+    "security": {
+      "priority": "high",
+      "risk_tolerance": "low",
+      "examples": ["input validation", "secure defaults", "access controls"]
+    }
+  }
+} 
